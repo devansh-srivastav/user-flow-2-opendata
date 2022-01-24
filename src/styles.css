@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: black;
+  height: 100vh;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Screen {
+  position: relative;
+  transform: scale(0.5);
+}
+
+.Button {
+  position: absolute;
+}
+
+.Button.debug {
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 2px;
+  overflow: hidden;
+}
