@@ -37,7 +37,7 @@ export default function App() {
         <Route
           path="/"
           element={
-            <Screen image="/01_Introduction.jpg">
+            <Screen image="/1.jpg">
               <Button to="/disclaimer" x="1075" y="1000" w="245" h="110" />
             </Screen>
           }
@@ -45,7 +45,7 @@ export default function App() {
         <Route
           path="/disclaimer"
           element={
-            <Screen image="/02_Introduction.jpg">
+            <Screen image="/2.jpg">
               <Button to="/get-start" x="1075" y="1000" w="245" h="110" />
             </Screen>
           }
@@ -53,7 +53,7 @@ export default function App() {
         <Route
           path="/get-start"
           element={
-            <Screen image="/03_Introduction.jpg">
+            <Screen image="/3.jpg">
               <Button to="/home" x="1005" y="1000" w="380" h="110" />
             </Screen>
           }
@@ -61,16 +61,16 @@ export default function App() {
         <Route
           path="/home"
           element={
-            <Screen image="/04_Main-Page.jpg">
-              <Button to="/login" x="1710" y="30" w="180" h="75" />
+            <Screen image="/4.jpg">
+              <Button to="/login" x="1680" y="23" w="217" h="85" />
             </Screen>
           }
         />
         <Route
           path="/login"
           element={
-            <Screen image="/05_Login-Page.jpg">
-              <Button to="/dashboard" x="1115" y="870" w="170" h="120" />
+            <Screen image="/5.jpg">
+              <Button to="/dashboard" x="1075" y="840" w="280" h="120" />
             </Screen>
           }
         />
@@ -78,37 +78,37 @@ export default function App() {
         <Route
           path="/dashboard"
           element={
-            <Screen image="/06_Your-Dashboard.jpg">
-              <Button to="/home" x="1680" y="30" w="220" h="75" />
-              <Button to="/upload" x="1535" y="220" w="350" h="120" />
+            <Screen image="/6.jpg">
+              <Button to="/home" x="1670" y="23" w="217" h="85" />
+              <Button to="/upload" x="1465" y="220" w="420" h="120" />
             </Screen>
           }
         />
         <Route
           path="/upload"
           element={
-            <Screen image="/07_Upload-Page.jpg">
-              <Button to="/home" x="1680" y="30" w="220" h="75" />
-              <Button to="/review" x="1165" y="1010" w="225" h="120" />
+            <Screen image="/7.jpg">
+              <Button to="/home" x="1670" y="23" w="217" h="85" />
+              <Button to="/review" x="1115" y="1010" w="185" h="120" />
             </Screen>
           }
         />
         <Route
           path="/review"
           element={
-            <Screen image="/08_Upload-Page-Review.jpg">
-              <Button to="/upload" x="1222" y="950" w="245" h="90" />
-              <Button to="/success" x="965" y="950" w="245" h="90" />
+            <Screen image="/8.jpg">
+              <Button to="/upload" x="1227" y="940" w="245" h="90" />
+              <Button to="/success" x="965" y="940" w="245" h="90" />
             </Screen>
           }
         />
         <Route
           path="/success"
           element={
-            <Screen image="/09_Success-Page.jpg">
-              <Button to="/home" x="1680" y="30" w="220" h="75" />
-              <Button to="/dashboard" x="910" y="790" w="575" h="110" />
-              <Button to="/upload" x="985" y="917" w="430" h="110" />
+            <Screen image="/9.jpg">
+              <Button to="/home" x="1670" y="23" w="217" h="85" />
+              <Button to="/dashboard" x="1220" y="847" w="460" h="110" />
+              <Button to="/upload" x="715" y="847" w="460" h="110" />
             </Screen>
           }
         />
