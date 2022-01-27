@@ -63,6 +63,7 @@ export default function App() {
           element={
             <Screen image="/4.jpg">
               <Button to="/login" x="1680" y="23" w="217" h="85" />
+              <Button to="/home" x="430" y="23" w="517" h="85" />
             </Screen>
           }
         />
@@ -71,6 +72,7 @@ export default function App() {
           element={
             <Screen image="/5.jpg">
               <Button to="/dashboard" x="1075" y="840" w="280" h="120" />
+              <Button to="/home" x="430" y="23" w="517" h="85" />
             </Screen>
           }
         />
@@ -81,24 +83,60 @@ export default function App() {
             <Screen image="/6.jpg">
               <Button to="/home" x="1670" y="23" w="217" h="85" />
               <Button to="/upload" x="1465" y="220" w="420" h="120" />
+              <Button to="/dashboard" x="430" y="23" w="517" h="85" />
             </Screen>
           }
         />
         <Route
           path="/upload"
           element={
-            <Screen image="/7.jpg">
-              <Button to="/home" x="1670" y="23" w="217" h="85" />
-              <Button to="/review" x="1115" y="1010" w="185" h="120" />
+            <Screen image="/7.0.png">
+              <Button to="/home" x="1750" y="23" w="237" h="85" />
+              <Button to="/upload-metadata" x="1155" y="430" w="599" h="400" />
+              <Button to="/upload-data" x="485" y="430" w="599" h="400" />
+              <Button to="/dashboard" x="430" y="23" w="517" h="85" />
             </Screen>
           }
         />
         <Route
-          path="/review"
+          path="/upload-data"
+          element={
+            <Screen image="/7.3.jpg">
+              <Button to="/home" x="1750" y="23" w="237" h="85" />
+              <Button to="/upload" x="990" y="1010" w="195" h="105" />
+              <Button to="/review-data" x="1200" y="1010" w="195" h="105" />
+              <Button to="/dashboard" x="430" y="23" w="517" h="85" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/review-data"
           element={
             <Screen image="/8.jpg">
-              <Button to="/upload" x="1227" y="940" w="245" h="90" />
+              <Button to="/upload-data" x="1227" y="940" w="245" h="90" />
               <Button to="/success" x="965" y="940" w="245" h="90" />
+              <Button to="/dashboard" x="430" y="23" w="517" h="85" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/upload-metadata"
+          element={
+            <Screen image="/7.2.jpg">
+              <Button to="/home" x="1750" y="23" w="237" h="85" />
+              <Button to="/upload" x="990" y="1010" w="195" h="105" />
+              <Button to="/review-metadata" x="1200" y="1010" w="195" h="105" />
+              <Button to="/dashboard" x="430" y="23" w="517" h="85" />
+            </Screen>
+          }
+        />
+        <Route
+          path="/review-metadata"
+          element={
+            <Screen image="/8.jpg">
+              <Button to="/upload-metadata" x="1227" y="940" w="245" h="90" />
+              <Button to="/success" x="965" y="940" w="245" h="90" />
+              <Button to="/dashboard" x="430" y="23" w="517" h="85" />
             </Screen>
           }
         />
@@ -109,6 +147,7 @@ export default function App() {
               <Button to="/home" x="1670" y="23" w="217" h="85" />
               <Button to="/dashboard" x="1220" y="847" w="460" h="110" />
               <Button to="/upload" x="715" y="847" w="460" h="110" />
+              <Button to="/dashboard" x="430" y="23" w="517" h="85" />
             </Screen>
           }
         />
